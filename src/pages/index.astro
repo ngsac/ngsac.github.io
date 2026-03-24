@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SectionTitle from "../components/SectionTitle.astro";
+---
+
+<BaseLayout
+  title="NGSAC | Mobile System Security Advisory Forum"
+  description="NGSAC bridges academic mobile network security research and standards development."
+>
+  <section class="hero hero--compact">
+    <div class="container hero-simple">
+      <div class="intro-panel hero-copy">
+        <p class="eyebrow">Objectives</p>
+        <h2 class="hero-title">Real world impact</h2>
+        <p class="lede">
+          NGSAC brings together researchers, industry experts, and standards participants to
+          examine security issues in next-generation mobile systems and translate research
+          findings into practical input for standards development to advance real world impact.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--compact">
+    <div class="container">
+      <SectionTitle
+        eyebrow="Motivation"
+        title="Why NGSAC is needed"
+      />
+      <div class="intro-panel">
+        <p>
+          Academic research has produced a large body of work on mobile network security, from
+          subscriber privacy and authentication to radio access and core network security.
+          Yet the path from research results to real standards impact has often been limited.
+        </p>
+        <p>
+          One reason is structural: 3GPP standards development is member-driven, and technical
+          discussions take place in closed meetings that most academic researchers do not attend.
+          As a result, strong research findings do not always reach the standards process in a
+          timely or actionable form.
+        </p>
+        <p>
+          NGSAC aims to address that gap by creating a focused forum where researchers, industry
+          experts, and 3GPP participants can review security developments, identify research with
+          standards relevance, and translate technical insight into practical recommendations,
+          public reports, and liaison-oriented inputs for next-generation mobile systems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--compact">
+    <div class="container">
+      <SectionTitle
+        eyebrow="Latest"
+        title="Latest news"
+      />
+      <ul class="news-list">
+        <li>
+          <strong>March 24, 2026:</strong> The NGSAC website went public.
+        </li>
+        <li>
+          <strong>December 19, 2025:</strong> NGSAC was established.
+        </li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,30 @@
+---
+import { formatDate } from "../utils/dates";
+
+interface Props {
+  publication: {
+    slug: string;
+    data: {
+      title: string;
+      date: Date;
+      type: string;
+      summary: string;
+      tags: string[];
+    };
+  };
+}
+
+const { publication } = Astro.props;
+---
+
+<article class="card">
+  <p class="eyebrow">{publication.data.type}</p>
+  <h3><a href={`/publications/${publication.slug}`}>{publication.data.title}</a></h3>
+  <p>{formatDate(publication.data.date)}</p>
+  <p>{publication.data.summary}</p>
+  <ul class="tag-list">
+    {publication.data.tags.map((tag) => (
+      <li class="tag">{tag}</li>
+    ))}
+  </ul>
+</article>

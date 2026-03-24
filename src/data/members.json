@@ -1,0 +1,12 @@
+[
+  { "name": "Syed Rafiul Hussain", "affiliation": "Penn State University" },
+  { "name": "Imtiaz Karim", "affiliation": "University of Texas at Dallas" },
+  { "name": "Yongdae Kim", "affiliation": "KAIST", "role": "Co-chair" },
+  { "name": "CheolJun Park", "affiliation": "Kyung Hee University" },
+  { "name": "Christina Popper", "affiliation": "NYU Abu Dhabi" },
+  { "name": "Rajavelsamy Rajadurai", "affiliation": "Samsung", "role": "3GPP SA3 Chair" },
+  { "name": "David Rupprecht", "affiliation": "Montsecure" },
+  { "name": "Jean-Pierre Seifert", "affiliation": "TU Berlin" },
+  { "name": "Tao Wan", "affiliation": "CableLabs", "role": "Co-chair" },
+  { "name": "Yiming Zhang", "affiliation": "Tsinghua University" }
+]

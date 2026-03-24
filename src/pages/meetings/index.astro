@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import { formatDate } from "../../utils/dates";
+
+const meetings = (await getCollection("meetings", ({ data }) => !data.draft)).sort(
+  (a, b) => a.data.date.valueOf() - b.data.date.valueOf()
+);
+---
+
+<BaseLayout title="NGSAC Meetings" description="NGSAC meeting schedule.">
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">Meetings</p>
+      <h1>NGSAC meeting schedule</h1>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="table-wrap">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Quarter</th>
+              <th>Meeting</th>
+              <th>Date</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+          <tbody>
+            {meetings.map((meeting) => (
+              <tr>
+                <td>{meeting.data.quarter}</td>
+                <td>{meeting.data.title}</td>
+                <td>{formatDate(meeting.data.date)}</td>
+                <td>{meeting.data.time || "TBD"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

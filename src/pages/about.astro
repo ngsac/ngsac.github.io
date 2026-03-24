@@ -1,0 +1,57 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import members from "../data/members.json";
+---
+
+<BaseLayout title="About NGSAC" description="Mission, governance, scope, and membership of NGSAC.">
+  <section class="page-head">
+    <div class="container">
+      <p class="eyebrow">About</p>
+      <h1>NGSAC overview</h1>
+      <p class="lede">
+        NGSAC is an academic and industry advisory forum focused on next-generation mobile
+        system security, with an emphasis on transparent engagement around standards-relevant research.
+      </p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container split">
+      <div class="prose">
+        <h2>Mission</h2>
+        <p>
+          The committee exists to connect academic mobile security research with standards
+          development, especially where useful public-facing analysis can help shape future
+          mobile system security work.
+        </p>
+        <h2>Objectives</h2>
+        <ul>
+          <li>Increase academic influence on next-generation mobile security specifications.</li>
+          <li>Improve transparency around standards developments relevant to researchers.</li>
+          <li>Publish advisory reports, position papers, and related outputs.</li>
+        </ul>
+        <h2>Governance</h2>
+        <p>
+          The leadership structure consists of two co-chairs and one secretary serving two-year
+          terms, with consensus-first decision making and documented voting when needed.
+        </p>
+      </div>
+      <aside class="card">
+        <p class="eyebrow">Members</p>
+        <ul>
+          {members.map((member) => (
+            <li>
+              <strong>{member.name}</strong>, {member.affiliation}
+              {member.role && (
+                <>
+                  {" ("}
+                  {member.role === "Co-chair" ? <strong>{member.role}</strong> : member.role}
+                  {")"}
+                </>
+              )}
+            </li>
+          ))}
+        </ul>
+      </aside>
+    </div>
+  </section>
+</BaseLayout>

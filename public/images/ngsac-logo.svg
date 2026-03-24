@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" role="img" aria-labelledby="title desc">
+  <title id="title">NGSAC logo</title>
+  <desc id="desc">NGSAC wordmark with a mobile security icon.</desc>
+  <defs>
+    <style>
+      .word { font: 700 132px "Avenir Next", "Segoe UI", Arial, sans-serif; fill: #123b54; letter-spacing: 2px; }
+      .sub { font: 500 42px "Avenir Next", "Segoe UI", Arial, sans-serif; fill: #123b54; }
+      .stroke-green { fill: none; stroke: #5db24c; stroke-width: 10; stroke-linecap: round; }
+      .stroke-blue { fill: none; stroke: #123b54; stroke-width: 9; stroke-linecap: round; stroke-linejoin: round; }
+      .fill-blue { fill: #123b54; }
+      .fill-white { fill: #ffffff; }
+    </style>
+  </defs>
+
+  <path class="stroke-green" d="M35 108a70 70 0 0 1 140 0" />
+  <path class="stroke-green" d="M15 128a95 95 0 0 1 180 0" />
+
+  <path class="stroke-blue" d="M95 145V92" />
+  <path class="stroke-blue" d="M82 92h26" />
+  <path class="stroke-blue" d="M76 92l8-35h22l8 35" />
+  <path class="stroke-blue" d="M72 75h46" />
+  <path class="stroke-blue" d="M84 58l-2 34" />
+  <path class="stroke-blue" d="M96 56l-1 36" />
+  <path class="stroke-blue" d="M108 58l2 34" />
+
+  <path class="fill-blue" d="M74 145h42c12 0 22 10 22 22v15c0 21-16 38-43 49-27-11-43-28-43-49v-15c0-12 10-22 22-22z" />
+  <path class="fill-blue" d="M83 128c0-7 5-12 12-12h0c7 0 12 5 12 12v18H83z" />
+  <circle class="fill-white" cx="95" cy="177" r="10" />
+  <rect class="fill-white" x="91" y="184" width="8" height="14" rx="4" />
+
+  <text x="230" y="118" class="word">NGSAC</text>
+  <text x="230" y="170" class="sub">Next Generation Mobile Systems</text>
+  <text x="230" y="208" class="sub">Security Advisory Committee</text>
+</svg>
