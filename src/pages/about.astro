@@ -44,7 +44,7 @@ import members from "../data/members.json";
               {member.role && (
                 <>
                   {" ("}
-                  {member.role === "Co-chair" ? <strong>{member.role}</strong> : member.role}
+                  {member.role === "Co-chair" || member.role === "Secretary" ? <strong>{member.role}</strong> : member.role}
                   {")"}
                 </>
               )}
